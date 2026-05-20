@@ -1,5 +1,5 @@
 
-# O objetivo deste repositório é para armazenar códigos em Python para possíveis consultas no futuro ou até mesmo para estudo.
+## O objetivo deste repositório é para armazenar códigos em Python para possíveis consultas no futuro ou até mesmo para estudo.
 
 <img src="img/Py-logo.png" style="vertical-align: middle;">
 
