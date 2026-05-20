@@ -1,5 +1,5 @@
 
-### O objetivo deste repositório é para armazenar códigos em Python para possíveis consultas no futuro ou até mesmo para estudo.
+### O objetivo deste repositório é armazenar códigos em Python para possíveis consultas no futuro ou até mesmo para estudo.
 
 ### Link do Python para Download: https://www.python.org/downloads
 
