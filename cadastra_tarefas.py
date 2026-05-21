@@ -1,5 +1,13 @@
 # Cadastro de tarefas
 
+def adiciona_tarefa(tarefa):
+    lista_tarefas.append(tarefa)
+    print("Tarefa adicionada com sucesso!")
+    
+def remove_tarefa(remover):
+    lista_tarefas.pop(remover - 1)
+    print("Tarefa removida!")
+
 def mostrar_tarefas():
     for indice, tarefa in enumerate(lista_tarefas):
         print(indice + 1, "-", tarefa)
@@ -29,8 +37,8 @@ while True:
                 print("Digite uma tarefa válida!")
                 continue
             
-            lista_tarefas.append(tarefa)
-            print("Tarefa adicionada com sucesso!")
+            adiciona_tarefa(tarefa)      
+                  
             pergunta_add_tarefa = input("Deseja adicionar mais uma tarefa? ").lower()
             if pergunta_add_tarefa in ["não", "nao", "na", "nã", "n"]:
                 break
@@ -62,8 +70,8 @@ while True:
                         
                         if 1 <= remover <= len(lista_tarefas):
                             
-                            lista_tarefas.pop(remover - 1)
-                            print("Tarefa removida!")
+                            remove_tarefa(remover)
+                            
                             pergunta_rem_tarefa = input("Deseja remover mais uma tarefa? ").lower()
                             
                             if pergunta_rem_tarefa in ["não", "nao", "na", "nã", "n"]:
