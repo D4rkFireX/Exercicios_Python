@@ -1,9 +1,9 @@
 #  | Biblioteca      | Pra quê                         |
 #  | --------------- | ------------------------------- |
 #  | `yt_dlp`        | baixar vídeo/áudio              |
-#  | `ffmpeg`        | converter áudio/vídeo           |
 #  | `os`            | criar pastas/manipular arquivos |
 #  | `pathlib`       | caminhos de arquivos            |
+#  | `ffmpeg`        | converter áudio/vídeo    (Não inclusa neste exercício)
 
 # CONVERSOR DE MÍDIA DO YOUTUBE - VIDEO/AUDIO
 # Dependências -> yt-dlp              pip install yt-dlp
@@ -59,7 +59,7 @@ def baixar_video(url):
         
     except Exception as erro:
         print(f"Ocorreu um erro ao baixar o vídeo...: {erro}")
-        
+
 def baixar_audio(url):
     try:
         pasta_download = pathlib.Path("audios")
@@ -138,4 +138,3 @@ while True:
     elif decisao == 4:
         print("Encerrando a Aplicação")
         break
-    
