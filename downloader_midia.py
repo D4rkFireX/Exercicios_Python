@@ -38,7 +38,7 @@ def baixar_video(url):
         print(f"5 - 1440p")
         print(f"6 - 2160p\n")
         
-        # Formatos de 360p a 1080p        
+        # Formatos de 360p a 2160p        
         formatos = {
             1: 'bestvideo[height<=360]+bestaudio/best',
             2: 'bestvideo[height<=480]+bestaudio/best',
