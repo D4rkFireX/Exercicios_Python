@@ -8,9 +8,9 @@
 #  | `ffmpeg`        | converter áudio/vídeo    (Não é uma biblioteca e sim um programa)
 #---------------------------------------------------------------------------------------
 
-# CONVERSOR DE MÍDIA DO YOUTUBE - VIDEO/AUDIO
+# CONVERSOR DE MÍDIA - VIDEO/AUDIO
 # Dependências -> yt-dlp              pip install yt-dlp
-
+# ffmpeg                              winget install ffmpeg (Windows)
 
 # Importação de bibliotecas
 import os           # Para comandos envolvendo o sistema operacional
@@ -21,7 +21,7 @@ def limpa_tela():       # Função de limpar tela (Executa o comando cls caso se
     os.system('cls' if os.name == 'nt' else 'clear')
     
 def baixar_video(url):
-    # Tratando a validação de entrada do usuário ao tentar baixar o vídeo do youtube
+    # Tratando a validação de entrada do usuário ao tentar baixar o vídeo
     try:
         # Organização da pasta de donwload de vídeo
         pasta_download = pathlib.Path("videos")
@@ -31,7 +31,9 @@ def baixar_video(url):
         print(f"\n1 - 360p")
         print("2 - 480p")
         print("3 - 720p")
-        print(f"4 - 1080p\n")
+        print("4 - 1080p")
+        print(f"5 - 1440p")
+        print(f"6 - 2160p\n")
         
         # Formatos de 360p a 1080p        
         formatos = {
@@ -39,6 +41,8 @@ def baixar_video(url):
             2: 'bestvideo[height<=480]+bestaudio/best',
             3: 'bestvideo[height<=720]+bestaudio/best',
             4: 'bestvideo[height<=1080]+bestaudio/best',
+            5: 'bestvideo[height<=1440]+bestaudio/best',
+            6: 'bestvideo[height<=2160]+bestaudio/best',
         }
         
         # Tratando a validação de entrada do usuário ao escolher a qualidade
@@ -100,7 +104,7 @@ def baixar_audio(url):
 while True:
     # Introdução da aplicação
     print("=" * 50)
-    print(f"Downloader de mídia do YouTube -> Vídeo/Música\n")
+    print(f"Downloader de mídia -> Vídeo/Música\n")
     print(f"O que você deseja fazer?")
     print("=" * 50)
     
