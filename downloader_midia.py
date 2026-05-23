@@ -9,7 +9,10 @@
 #---------------------------------------------------------------------------------------
 
 # CONVERSOR DE MÍDIA - VIDEO/AUDIO
-# Dependências -> yt-dlp              pip install yt-dlp
+
+# Dependências para este mini-sistema
+#
+# yt-dlp                              pip install yt-dlp
 # ffmpeg                              winget install ffmpeg (Windows)
 
 # Importação de bibliotecas
