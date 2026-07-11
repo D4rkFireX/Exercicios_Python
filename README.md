@@ -2,7 +2,7 @@
 ### O objetivo deste repositório é armazenar códigos em Python para possíveis consultas no futuro ou até mesmo para estudo.
 
 ### Link do Python para Download: https://www.python.org/downloads
-### Ou senão, você pode baixar nas releases deste repositório - Lá está disponível a versão 3.14.5
+### Ou senão, você pode baixar nas releases deste repositório
 
 <p><b>Faça o Download de acordo com o seu Sistema Operacional<b></p>
 
